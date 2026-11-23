@@ -1,0 +1,7 @@
+{
+  "variables": { "baseUrl": "https://httpbin.org" },
+  "requests": [
+    { "name": "Health-style GET", "method": "GET", "url": "{{baseUrl}}/get", "expectStatus": 200 },
+    { "name": "Echo JSON", "method": "POST", "url": "{{baseUrl}}/post", "headers": { "content-type": "application/json" }, "body": { "hello": "requestlab" }, "expectStatus": 200 }
+  ]
+}
